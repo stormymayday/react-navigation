@@ -8,6 +8,8 @@ import Register from "../screens/auth/Register";
 // CONSTANTS
 import { COLORS, ROUTES } from "../constants";
 
+import HomeNavigator from "./HomeNavigator";
+
 const Stack = createStackNavigator();
 // Navigator, Screen, Group
 
@@ -33,6 +35,12 @@ const AuthNavigator = () => {
                 })}
             />
             <Stack.Screen name="Register" component={Register} />
+
+            <Stack.Screen
+                name="Home"
+                component={HomeNavigator}
+                options={{ headerShown: false }}
+            />
         </Stack.Navigator>
     );
 };

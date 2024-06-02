@@ -40,7 +40,7 @@ const Login = (props) => {
                         > */}
                         {/******************** LOGIN BUTTON *********************/}
                         <TouchableOpacity
-                            onPress={() => navigation.navigate(ROUTES.HOME)}
+                            onPress={() => navigation.navigate("Home")}
                             activeOpacity={0.7}
                             style={styles.loginBtn}
                         >
